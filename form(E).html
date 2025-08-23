@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> student registration Form</title>
+    <style>
+        .div{
+            display: block;
+            border:1cm
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>STUDENT REGISTARTION FORM</h2>
+    <form action="https://newerp.kluniversity.in">
+        <h3> <b>Personal information</b></h3>
+        <div>
+       <label for="fn"> FullName:</label> <input type="text" id="fn" required><br></div>
+        <div><label for="gn">Gender:</label> <input type="radio" id="gn" name="hh" value="Male" required>Male
+        <input type="radio" name="hh" value="Female">Female<br></div>
+       <div> <label for="mail"> Email:</label> <input type="email" id="mail" required><br></div>
+      <div>  <lable for="cont">contact:</lable> <input type="tel"  pattern="[0-9] {10}" id="cont" required><br></div>
+      <div>  <label for="dob">Date of Birth:</label><input type="date" id="dob" required><br></div>
+     <div> <label for="add">  Address:</label> <textarea row="5" id="add" required> </textarea></div>
+     <div>   <h3><b>Academic details</b></h3>
+        <label for=branch>Branch:
+</label>        <select required id="branch">
+            <option value="">--select--</option>
+            <option value="cse">CSE</option>
+            <option value="eee">EEE</option>
+            <option value="mbbs">MBBS</option>
+            <option value="ece">ECE</option>
+        </select><br></div>
+     <div>  <label for="lang" id="lang"> languages Known:</label><br>
+        <input type="checkbox" name="c" value="eng">english
+        <input type="checkbox" name="c" value="tel">telugu
+        <input type="checkbox" name="c" value="hin">hindi
+        <input type="checkbox" name="c" value="jap">japanese<br></div>
+          <div><label for="res"> resume:</label>
+          <input type="file" required><br></div>
+         <div> <button>SUBMIT</button></div>
+    </form>
+    
+</body>
+</html>

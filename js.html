@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('hello this is alert box')">show alert</button>
+    <button onclick="deleteData()">Delete Item</button>
+    <script>
+        function deleteData(){
+            const confirmDelete = confirm("Are you sure you want to  delete");
+            if(confirmDelete){
+                alert("Item deleted");
+            }
+            else{
+                alert("deletion cancelled");
+            }
+        }
+    </script>
+   <button onclick="getName()">Enter your name</button>
+   <script>
+    function getName(){
+        const name = prompt("What is ur name");
+        if(name){
+            alert("Hello, "+name+"!");;
+        }else{
+            alert("didnt enter anythiing");
+        }
+    }
+   </script>
+   <button onclick="showMessage()">Click Here</button>
+</body>
+</html>

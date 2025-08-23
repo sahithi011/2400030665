@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Card Demo</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 30px;
+          }
+          h2{
+            text-align: center;
+            margin-top: 30px;
+          }
+          .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: stretch;
+            gap: 30px;
+
+          }
+          .card{
+            background: #f1f1f1;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            max-width: 200px;
+            min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .card h3{
+            margin-bottom: 10px;
+
+          }
+          .card p{
+            flex-grow: 1;
+          }
+          .card button{
+            background-color: black;
+            color: beige;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+
+          }
+          .card button{
+            background-color: black;
+          }
+    </style>
+</head>
+<body>
+    <h2> Responsive Flexbox Cards</h2>
+    <div class="flex-container">
+        <div class="card">
+            <h4>card1</h4>
+            <p>This is the simple card with some matter inside.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h4>Card2</h4>
+            <p>This is also a card 2 with some matter inside.</p>
+            <button>Learn more</button>
+        </div>
+        <div class="card">
+            <h4>Card3</h4>
+            <p>This is also a card 3 with some matter inside.</p>
+            <button>Learn more</button>
+        </div>
+    </div>
+</body>
+</html>
